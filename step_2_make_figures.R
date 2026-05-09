@@ -94,8 +94,8 @@ f3 <- f3a + f3b + f3c + f3d + plot_layout(nrow = 4, ncol = 1)
 
 
 
-ggsave(f3, file = "esoil.png", width = 10, height = 12, dpi = 700)
 
+              
 
 ##### figure 4
 ##### fig4a
@@ -198,8 +198,7 @@ f4c <- ggplot(data = REsoil1, aes(x = VWC.mean, y = log_Normalized_Rsoil.mean)) 
         plot.title = element_text(size=14, face="bold.italic", 
                                   hjust = 0.5)) +
   labs(title = "", x = expression(VWC~(m^3~m^-3)), y = expression(atop(Log~"*"~italic(R)[soil],
-
-                                                                                                                                                         (µmol~CO[2]~m^-2~s^-1)))); f4c
+                                                                       (µmol~CO[2]~m^-2~s^-1)))); f4c
 
 
 
@@ -380,9 +379,6 @@ f2 <- f2a + f2b + f2c + plot_layout(nrow = 3, ncol = 1)
 
 
 ###### figure s4
-
-
-
 ptsoil <- ggplot(data = REsoil, aes(x = Tsoil, y = Meaured_Rsoil)) +
   geom_point(color = "darkgrey", stat="identity", size = 2) +
   geom_smooth(method = "lm", se = FALSE, color = "royalblue") +
