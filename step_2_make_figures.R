@@ -22,7 +22,7 @@ f3a <- ggplot(Esoil, aes(date, Tsoil.mean, color = treatment)) +
   scale_x_date(breaks = seq(as.Date("2014-07-01"), as.Date("2015-03-31"), by = "2 months"), labels = function(x) substr(format(x, "%b"), 1, 3)) +
   labs(title = "", x = "", y = expression(italic(T)[soil]~ ~(degree*C))); f3a
 
-f3b <- ggplot(Esoil_all, aes(date, VWC.mean, color = treatment)) +
+f3b <- ggplot(Esoil, aes(date, VWC.mean, color = treatment)) +
   geom_point() +
   scale_color_manual(values=c("Cp"="#f28ca6",
                               "cp"="#5A8BE6",
