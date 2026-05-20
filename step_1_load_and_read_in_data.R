@@ -6,6 +6,7 @@ library(patchwork)
 library(car) ### Anova for lmer p value
 library(mgcv) # gam
 library(glmmTMB) # glmm
+library(emmeans)
 Sys.setlocale("LC_TIME", "C")
 
 
